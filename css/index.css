@@ -1,0 +1,577 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.j-c-between {
+    justify-content: space-between;
+    display: flex;
+}
+
+/* HEADER FIRST SECTION */
+
+.navbar {
+    width: 100% !important;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/cloud.png);
+}
+
+.header-bg {
+    width: 100%;
+    height: 50px;
+    background-color: whitesmoke;
+    border: 1px dashed gray;
+    border-radius: 0px 0px 10px 10px;
+    line-height: 30px;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.icon-img {
+    line-height: 45px;
+    padding: 0px 20px;
+}
+
+.icon-img a i {
+    font-size: 18px;
+    color: #ED25A1;
+    padding: 0px 7px;
+}
+
+.border-line {
+    width: 2px;
+    height: 13px;
+    background-color: rgb(128, 128, 128);
+    margin-top: 16px;
+}
+
+.menu {
+    padding: 0px 14px;
+}
+
+.nav-item a {
+    color: rgb(128, 128, 128);
+}
+
+.nav-item {
+    padding: 0px 4px;
+}
+
+.nav-item i {
+    display: none;
+}
+
+.li-parent {
+    position: relative;
+}
+
+.li-child {
+    transition: all 0.5s linear;
+}
+
+.li-child:hover {
+    color: #ED25A1;
+    text-shadow: 1px 1px 1px #ED25A1;
+
+}
+
+.li-child::after {
+    content: '';
+    position: absolute;
+    width: 90%;
+    height: 5%;
+    left: 5%;
+    bottom: 17%;
+    background-color: #ED25A1;
+    transition: all 0.5s linear;
+    transform: scaleX(0);
+}
+
+.li-child:hover::after {
+    transform: scaleX(1);
+}
+
+.navbar-toggler {
+    background-color: #ED25A1 !important;
+}
+
+/* HEADER SECOND SECTION */
+
+.search-bar {
+    position: relative;
+}
+
+.search-bar input {
+    width: 100%;
+    height: 30px;
+    border: 1.5px solid gray;
+    border-radius: 3px;
+}
+
+.search-bar input::placeholder {
+    padding-left: 27px;
+    color: rgb(128, 128, 128);
+}
+
+.search-bar i {
+    position: absolute;
+    left: 10px;
+    line-height: 30px;
+    color: rgb(53, 176, 53);
+    font-size: 14px;
+}
+
+.cart-img img {
+    width: 38px;
+    object-fit: cover;
+    height: 38px;
+    cursor: pointer;
+}
+
+.cart-outer-text {
+    color: #E18801;
+    margin-left: 5px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.cart-inner-text {
+    color: #222;
+    font-size: 16px;
+}
+
+
+/* NEW RELEASE SECTION */
+
+main {
+    width: 100%;
+    height: auto;
+}
+
+.main {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/cloud.png);
+    object-fit: cover;
+}
+
+.main-one {
+    width: 100%;
+    height: auto;
+    background-color: #ED25A1;
+    border-radius: 10px 10px 0px 0px;
+    border: 1px dashed white;
+    padding: 0px 15px;
+}
+
+.main-one p a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.main-one p:hover {
+    transform: scale(1.09, 1.09);
+    transition: all 0.3s linear;
+}
+
+.main-two {
+    height: auto;
+    background-image: url(../images/release.png);
+}
+
+.main-content {
+    margin-top: 60px;
+}
+
+.main-content h3 {
+    font-size: 25px;
+}
+
+.main-content span {
+    color: #ED25A1;
+    font-size: 26px;
+}
+
+.main-content p {
+    margin-top: 4px;
+    line-height: 20px;
+}
+
+.btn {
+    width: 110px;
+    height: 32px;
+    border-radius: 15px;
+    font-size: 14px;
+    border: none;
+    background-color: #63D934;
+    color: white;
+    line-height: 3px;
+}
+
+.btn:hover {
+    background-color: mediumturquoise;
+    transition: all 0.4s linear;
+}
+
+/* BOXES */
+
+.boxes {
+    width: 100%;
+    height: auto;
+    margin: 25px auto;
+}
+
+.boxes:hover>:not(:hover) {
+    filter: blur(5px);
+    transition: all 0.9s ease-in;
+    transform: scale(0.9, 0.9);
+}
+
+.box-1 {
+    width: 95%;
+    height: 208px;
+    background-color: #e08d0f;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    cursor: pointer;
+}
+
+.box-2 {
+    width: 95%;
+    height: 208px;
+    background-color: #ff44b7;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.box-3 {
+    width: 95%;
+    height: 208px;
+    background-color: #72d849;
+    color: white;
+    text-align: center;
+    padding-top: 2%;
+    cursor: pointer;
+}
+
+
+.btn-1 {
+    width: 35%;
+    height: 32px;
+    border-radius: 18px;
+    border: 2px solid white;
+    background-color: #c58018;
+    color: white;
+    margin-top: 8%;
+}
+
+.btn-1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-2 {
+    width: 35%;
+    height: 32px;
+    border-radius: 18px;
+    border: 2px solid white;
+    background-color: #d10081c3;
+    color: white;
+    margin-top: 9%;
+}
+
+.btn-2 a {
+    text-decoration: none;
+    color: white;
+}
+
+.btn-3 {
+    width: 35%;
+    height: 32px;
+    border-radius: 18px;
+    border: 2px solid white;
+    background-color: #51b629;
+    color: white;
+    margin-top: 8%;
+}
+
+.btn-3 a {
+    text-decoration: none;
+    color: white;
+}
+
+/* EMBROTIQUE SECTION */
+
+.embro-bg {
+    width: 100%;
+    height: auto;
+    background-image: url(../images/grey-lines-wallpaper-1.jpg);
+    margin-top: 5%;
+    padding-top: 2%;
+    border: 1px dashed gray;
+}
+
+.welcome-content {
+    width: 50%;
+}
+
+.bestever-content h3 {
+    font-size: 26px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.bestever-content p {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    font-size: 13px;
+    text-align: center;
+    color: rgb(128, 128, 128);
+    line-height: 21px;
+
+}
+
+.btn-4 {
+    width: 25%;
+    height: 32px;
+    border-radius: 30px;
+    border: 2px solid #ED25A1;
+}
+
+.btn-4 a {
+    color: #cb1c88;
+    text-decoration: none;
+}
+
+/* .btn-4:hover
+{
+    color: white;
+} */
+.close {
+    transition: all 0.25s ease;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    box-shadow:
+        inset -4em 0 0 0 #ED25A1,
+        inset 6.2em 0 0 0 #ED25A1;
+}
+
+/* .btn-4 a:hover{
+color: white;
+} */
+/* NEW PRODUCT SECTION */
+
+.product-content {
+    margin-top: 4%;
+    margin-bottom: 4%;
+    text-align: center;
+    color: #222;
+}
+
+.product-content h3 {
+    font-weight: 600;
+}
+
+.first-product {
+    height: auto;
+    border: 3px solid rgb(196, 193, 193);
+    padding-bottom: 10%;
+}
+
+.second-product {
+    height: auto;
+    border: 3px solid rgb(196, 193, 193);
+    padding-bottom: 10%;
+}
+
+.third-product {
+    height: auto;
+    border: 3px solid rgb(196, 193, 193);
+    padding-bottom: 10%;
+}
+
+.forth-product {
+    height: auto;
+    border: 3px solid rgb(196, 193, 193);
+    padding-bottom: 10%;
+}
+
+.discount-product {
+    width: 22%;
+    height: 70px;
+    background-color: #ED25A1;
+    border-radius: 0px 0px 50px;
+    /* padding-top:10px ; */
+    animation: fadeIn 2s infinite;
+}
+
+.animate {
+    animation: productanimation 1s;
+}
+
+@keyframes productanimation {
+    from {
+        transform: scale(1.06);
+    }
+
+    to {
+        transform: scale(1.2);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0.3;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.discount-product p {
+    font-size: 14px;
+    color: white !important;
+}
+
+.first-product p {
+    color: #222222c0;
+    text-align: center;
+    padding-top: 18%;
+}
+
+.second-product p {
+    color: #222222c0;
+    text-align: center;
+    padding-top: 18%;
+}
+
+.third-product p {
+    color: #222222c0;
+    text-align: center;
+    padding-top: 18%;
+}
+
+.forth-product p {
+    color: #222222c0;
+    text-align: center;
+    padding-top: 18%;
+}
+
+.first-product span {
+    color: rgb(5, 179, 5);
+}
+
+.second-product span {
+    color: rgb(5, 179, 5);
+}
+
+.third-product span {
+    color: rgb(5, 179, 5);
+}
+
+.forth-product span {
+    color: rgb(5, 179, 5);
+}
+
+.product-btn {
+    margin-top: 3%;
+}
+
+.btn-5 {
+    width: 35%;
+    height: auto !important;
+    line-height: 4px !important;
+    background-color: #f69a11;
+    border-radius: 20px;
+    border: none;
+    margin-top: 2%;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn-5 a {
+    color: white;
+    text-decoration: none;
+}
+
+/* FOOTER */
+
+.footer-bg {
+    width: 100% !important;
+    height: auto !important;
+    background-image: url(https://wallpapercave.com/wp/v0SLTMM.jpg);
+    background-size: cover;
+    margin-top: 6%;
+}
+
+.last-footer {
+    width: 100%;
+    height: auto;
+    background-color: #8ceb66;
+    padding-top: 20px;
+}
+
+.last-footer p {
+    color: white;
+    text-align: center;
+}
+
+.footer-content h4 {
+    color: white;
+    padding-bottom: 15px;
+}
+
+.footer-content p {
+    color: white;
+}
+
+.footer-info h4 {
+    color: white;
+}
+
+.footer-info input {
+    width: 100%;
+    line-height: 40px;
+    color: grey;
+}
+
+.footer-info input::placeholder {
+    padding-left: 15px;
+}
+
+.footer-btn {
+    width: 50%;
+    height: auto;
+    line-height: 32px;
+    background-color: #E18801;
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.footer-icons img {
+    padding: 0px 7px;
+}
